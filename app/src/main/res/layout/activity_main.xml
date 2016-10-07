@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/snake_bg" />
+    <ImageView
+        android:id="@+id/youtube_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/rouned_corner_shadow" />
+
+    <TextView
+        android:id="@+id/youtube_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/app_name"
+        android:layout_below="@+id/youtube_image"
+        android:textColor="@color/title"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_below="@+id/youtube_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/youtube_next"
+            android:background="@drawable/rouned_corner_shadow"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/youtube_next"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rouned_corner_shadow"
+            android:text="@string/btn_skip_intro" />
+    </RelativeLayout>
+
+</RelativeLayout>

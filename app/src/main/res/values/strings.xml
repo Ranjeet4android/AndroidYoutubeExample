@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidYoutubeExample</string>
+    <string name="btn_skip_intro">Next Video</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+</resources>
